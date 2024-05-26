@@ -83,6 +83,11 @@ def generate_launch_description():
         parameters=[moveit_config.robot_description],
     )
 
+    joint_state_publisher_node = Node(
+        package="joint_state_publisher_gui",
+        executable="joint_state_publisher_gui",
+    )
+
     # ros2_control using FakeSystem as hardware
     ros2_controllers_path = os.path.join(
         get_package_share_directory("husky_ur5_moveit"),
@@ -109,7 +114,13 @@ def generate_launch_description():
     ur5_arm_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["ur5_arm_controller", "-c", "/controller_manager"],
+        arguments=["ur5_arm_controller", "--controller-manager", "/controller_manager"],
+    )
+
+    robotiq_gripper_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["robotiq_gripper_controller", "--controller-manager", "/controller_manager"],
     )
 
 
@@ -119,9 +130,11 @@ def generate_launch_description():
             rviz_node,
             # static_tf_node,
             robot_state_publisher,
+            # joint_state_publisher_node,
             move_group_node,
             ros2_control_node,
             joint_state_broadcaster_spawner,
             ur5_arm_controller_spawner,
+            robotiq_gripper_controller_spawner
         ]
     )
