@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>ur5_isaac_simulation</name>
+  <version>0.0.0</version>
+  <description>UR5 Isaac Sim ROS simulation Package (adapted for ROS 1)</description>
+
+  <maintainer email="engcaiobarros@gmail.com">Caio Viturino</maintainer>
+  <license>BSD-2.0</license>
+
+  <url>TODO: Add URL for ROS 1 version (if applicable)</url>
+  <url type="repository">TODO: Update repository URL for ROS 1 version (if applicable)</url>
+  <url type="bugtracker">TODO: Update bugtracker URL for ROS 1 version (if applicable)</url>
+
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>control_msgs</build_depend>
+
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>control_msgs</run_depend>
+
+  <test_depend>rostest</test_depend>  <export>
+  </export>
+</package>
+

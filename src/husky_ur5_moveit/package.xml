@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>husky_ur5_moveit</name>
+  <version>0.3.0</version>
+  <description>An automatically generated package with all the configuration and launch files for using the husky_ur5 with the MoveIt Motion Planning Framework</description>
+  <maintainer email="ppppplustjh@gmail.com">plus</maintainer>
+
+  <license>BSD</license>
+
+  <url>http://moveit.ros.org/</url>
+  <url type="bugtracker">https://github.com/ros-planning/moveit2/issues</url>
+  <url type="repository">https://github.com/ros-planning/moveit2</url>
+
+  <export>
+  </export>
+</package>
+

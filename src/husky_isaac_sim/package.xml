@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <name>husky_isaac_sim</name>
+  <version>0.1.0</version>
+  <description>NVIDIA Isaac SIM and Husky demo launch</description>
+
+  <maintainer email="rbonghi@nvidia.com">Raffaello Bonghi</maintainer>
+  <license>MIT</license>
+
+  <url>https://developer.nvidia.com/isaac-ros</url>
+  <url type="repository">https://github.com/NVIDIA-AI-IOT/husky_demo</url>
+  <url type="bugtracker">https://github.com/NVIDIA-AI-IOT/husky_demo/issues</url>
+
+  <test_depend>rostest</test_depend>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>xacro</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+  <export>
+  </export>
+</package>
+
